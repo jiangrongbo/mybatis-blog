@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="User">
+	<select id="queryUserInfoByName" parameterType="string"  resultType="com.mybatis.domain.User">
+		select * from User where username = #{username}
+	</select>
+	<insert id="saveUser" parameterType="com.mybatis.domain.User">
+		insert into user(username,password,phone) values(#{username},#{password},#{phone});
+	</insert>
+	
+	<update id="updateUser" parameterType="com.mybatis.domain.User">
+		update user set password=#{password} where username=#{username}
+	</update>
+	
+	<delete id="deleteUser" parameterType="com.mybatis.domain.User">
+		delete from user where username = #{username}
+	</delete>
+</mapper>
