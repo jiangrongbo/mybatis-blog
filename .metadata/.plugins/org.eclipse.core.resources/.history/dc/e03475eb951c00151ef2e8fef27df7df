@@ -1,0 +1,5 @@
+package com.mybatis.dao.impl;
+
+public class UserDaoImpl implements UserDao.java{
+
+}

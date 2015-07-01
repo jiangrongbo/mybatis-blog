@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/tx 
+           http://www.springframework.org/schema/tx/spring-tx.xsd">
+    <context:property-placeholder  location="classpath:mysql.properties"/>
+    
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"       
+        destroy-method="close">      
+	    <property name="driverClassName" value="${driver}" />      
+	    <property name="url" value="${url}" />      
+	    <property name="username" value="${username}" />      
+	    <property name="password" value="${password}" />      
+	</bean>  
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"> 
+      <property name="dataSource" ref="dataSource" /> 
+      <property name="configLocation" value="classpath:SqlMapConfig.xml"/>
+    </bean>
+    
+    <bean id="sqlSessionTemplate"     class="org.mybatis.spring.SqlSessionTemplate"> 
+      <constructor-arg index="0" ref="sqlSessionFactory" /> 
+	</bean>
+	
+	<bean id="userDao" class="com.mybatis.dao.impl.UserDaoImpl">
+		<property name="sqlSessionTemplate" ref="sqlSessionTemplate"/>
+	</bean>
+	
+</beans>

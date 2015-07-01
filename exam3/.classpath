@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="src" path="domain"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/libs/common/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="/libs/common/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="/libs/common/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="/libs/common/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="/libs/common/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="/libs/common/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="/libs/driver/mysql-connector-java-5.1.6-bin.jar"/>
+	<classpathentry kind="lib" path="/libs/mybatis/mybatis-3.1.1-javadoc.jar"/>
+	<classpathentry kind="lib" path="/libs/mybatis/mybatis-3.1.1-sources.jar"/>
+	<classpathentry kind="lib" path="/libs/mybatis/mybatis-3.1.1.jar"/>
+	<classpathentry kind="lib" path="/libs/mybatis/mybatis-spring-1.0.0-RC3-javadoc.jar"/>
+	<classpathentry kind="lib" path="/libs/mybatis/mybatis-spring-1.0.0-RC3-sources.jar"/>
+	<classpathentry kind="lib" path="/libs/mybatis/mybatis-spring-1.2.3.jar"/>
+	<classpathentry kind="lib" path="/libs/spring/spring-aop-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/libs/spring/spring-beans-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/libs/spring/spring-context-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/libs/spring/spring-core-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/libs/spring/spring-expression-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/libs/spring/spring-jdbc-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/libs/spring/spring-tx-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/libs/spring/spring-web-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/libs/spring/spring-websocket-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/libs/struts2/asm-3.3.jar"/>
+	<classpathentry kind="lib" path="/libs/struts2/asm-commons-3.3.jar"/>
+	<classpathentry kind="lib" path="/libs/struts2/asm-tree-3.3.jar"/>
+	<classpathentry kind="lib" path="/libs/struts2/freemarker-2.3.19.jar"/>
+	<classpathentry kind="lib" path="/libs/struts2/javassist-3.11.0.GA.jar"/>
+	<classpathentry kind="lib" path="/libs/struts2/ognl-3.0.6.jar"/>
+	<classpathentry kind="lib" path="/libs/struts2/struts2-core-2.3.12.jar" sourcepath="C:/Users/root/.m2/repository/org/apache/struts/struts2-core/2.3.12/struts2-core-2.3.12-sources.jar"/>
+	<classpathentry kind="lib" path="/libs/struts2/struts2-spring-plugin-2.3.12.jar"/>
+	<classpathentry kind="lib" path="/libs/struts2/xwork-core-2.3.12.jar" sourcepath="C:/Users/root/.m2/repository/org/apache/struts/xwork/xwork-core/2.3.12/xwork-core-2.3.12-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

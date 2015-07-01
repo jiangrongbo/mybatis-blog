@@ -1,0 +1,5 @@
+package com.mybatis.action;
+
+public class LoginAction {
+
+}

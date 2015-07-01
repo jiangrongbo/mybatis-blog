@@ -1,0 +1,21 @@
+package com.mybatis.exam1;
+
+import org.junit.Test;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.mybatis.dao.UserDao;
+import com.mybatis.domain.User;
+
+public class SpringTest {
+	
+	@Test
+	public void testSpring()
+	{
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
+		UserDao userDao = (UserDao)context.getBean("userDao");
+		
+		
+		
+	}
+}

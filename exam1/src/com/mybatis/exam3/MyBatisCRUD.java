@@ -7,6 +7,7 @@ import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -35,8 +36,7 @@ public class MyBatisCRUD{
 	{			
 			User user = (User)session.selectOne("User.queryUserInfoByName","小王");			
 			//此处会调用user的toString方法
-			System.out.println(user);
-			
+			System.out.println(user);	
 	}
 	
 	@Test
@@ -48,8 +48,7 @@ public class MyBatisCRUD{
 			user.setUsername("Jane");
 			session.insert("User.saveUser", user);
 			//mybatis事物默认不自动提交
-			session.commit();
-			
+			session.commit();	
 	}
 	
 	@Test
@@ -61,7 +60,7 @@ public class MyBatisCRUD{
 			user.setUsername("Jane");
 			session.update("User.updateUser",user);
 			//mybatis事物默认不自动提交
-			session.commit();
+			session.commit();	
 			
 	}
 	
@@ -77,12 +76,12 @@ public class MyBatisCRUD{
 			session.commit();
 			
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+	@After
+	public void after()
+	{
+		if(null != session)
+		{
+			session.close();
+		}
+	}
 }

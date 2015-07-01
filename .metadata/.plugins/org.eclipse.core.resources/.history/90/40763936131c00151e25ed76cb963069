@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="User">
+	<sql id="queryUserInfo">
+		select * from User where username = #{username}
+	</sql>
+	<select id="queryUserInfoByName" parameterType="string"  resultType="user">
+		<include refid="queryUserInfo"></include>
+	</select>
+	<insert id="saveUser" parameterType="user">
+		insert into user(username,password,phone) values(#{username},#{password},#{phone});
+	</insert>
+	
+	<update id="updateUser" parameterType="user">
+		update user set password=#{password} where username=#{username}
+	</update>
+	
+	<delete id="deleteUser" parameterType="user">
+		delete from user where username = #{username}
+	</delete>
+	
+	
+	<resultMap type="hashmap"  id="queryUserInfoByNameResult">
+		<result property="username" column="username"/>
+		<result property="password" column="password"/>
+		<result property="phone" column="phone"/>
+	</resultMap>
+	<select id="queryUserInfoByNameV1" parameterType="hashmap"  resultMap="queryUserInfoByNameResult">
+		<include refid="queryUserInfo"></include>
+	</select>
+	
+	<resultMap type="hashmap"  id="queryAticleInfoResult">
+		<result property="username" column="username"/>
+		<result property="title" column="title"/>
+		<result property="content" column="content"/>
+		<result property="posttime" column="posttime"/>
+	</resultMap>
+	<select id="queryAticleInfo" parameterType="hashmap" resultMap="queryAticleInfoResult">
+		select u.username,a.title,a.content,a.posttime from article a,user u where u.uid = a.uid and u.username=#{username}
+	</select>
+	
+	<select id="queryUserInfoV1" parameterType="string"  resultType="user">
+		select * from User where username = #{username}
+		<if test="username != null"></if>
+	</select>
+	
+</mapper>

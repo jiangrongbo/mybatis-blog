@@ -1,0 +1,15 @@
+package com.mybatis.service.impl;
+
+import com.mybatis.dao.UserDao;
+import com.mybatis.service.UserService;
+
+public class UserServiceImpl implements UserService{
+	private UserDao userDao;
+	
+	@Override
+	public boolean checkUser(String username) {
+		
+		return false;
+	}
+	
+}

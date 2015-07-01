@@ -1,0 +1,7 @@
+package com.mybatis.dao;
+
+import com.mybatis.domain.User;
+
+public interface UserDao {
+	boolean saveUser(User u);
+}

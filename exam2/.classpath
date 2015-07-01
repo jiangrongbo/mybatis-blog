@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="src" path="domain"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/mybatis/mybatis-3.1.1.jar" sourcepath="lib/mybatis/mybatis-3.1.1-sources.jar">
+		<attributes>
+			<attribute name="javadoc_location" value="jar:platform:/resource/exam1/lib/mybatis/mybatis-3.1.1-javadoc.jar!/"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="lib/driver/mysql-connector-java-5.1.6-bin.jar"/>
+	<classpathentry kind="lib" path="lib/mybatis/mybatis-spring-1.2.3.jar" sourcepath="C:/Users/root/.m2/repository/org/mybatis/mybatis-spring/1.2.3/mybatis-spring-1.2.3-sources.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-beans-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-core-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-context-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/common/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-expression-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-jdbc-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/common/commons-dbcp-1.4.jar" sourcepath="C:/Users/root/.m2/repository/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4-sources.jar"/>
+	<classpathentry kind="lib" path="lib/common/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-tx-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring/spring-aop-4.0.0.RELEASE.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

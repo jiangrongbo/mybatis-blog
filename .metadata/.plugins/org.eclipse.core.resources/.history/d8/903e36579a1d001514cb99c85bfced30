@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 指定 action访问后缀名为*.do-->
+	<constant name="struts.action.extension" value="do"/> 
+    <package name="default" namespace="/"  extends="struts-default">
+        <action name="login" class="com.mybatis.action.LoginAction">
+            <result name="success">/WEB-INF/result.jsp</result>
+            <result name="input">/index.jsp</result>
+        </action>
+    </package>
+</struts>

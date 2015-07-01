@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="exam3">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/config"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/domain"/>
+        <dependent-module archiveName="mybatis-3.1.1-javadoc.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/mybatis/mybatis-3.1.1-javadoc.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io-2.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/common/commons-io-2.0.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mybatis-spring-1.2.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/mybatis/mybatis-spring-1.2.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ognl-3.0.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/struts2/ognl-3.0.6.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mybatis-3.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/mybatis/mybatis-3.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-beans-4.0.0.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/spring/spring-beans-4.0.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-tree-3.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/struts2/asm-tree-3.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-core-4.0.0.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/spring/spring-core-4.0.0.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-commons-3.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/struts2/asm-commons-3.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/common/commons-logging-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="mybatis-3.1.1-sources.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/mybatis/mybatis-3.1.1-sources.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="asm-3.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/struts2/asm-3.3.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="struts2-core-2.3.12.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/struts2/struts2-core-2.3.12.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javassist-3.11.0.GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/libs/struts2/javassist-3.11.0.GA.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="exam3"/>
+        <property name="java-output-path" value="/exam3/bin"/>
+    </wb-module>
+</project-modules>

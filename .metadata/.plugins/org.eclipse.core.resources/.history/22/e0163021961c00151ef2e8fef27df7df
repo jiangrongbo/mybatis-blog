@@ -1,0 +1,10 @@
+package com.mybatis.dao.impl;
+
+import org.mybatis.spring.SqlSessionTemplate;
+
+import com.mybatis.dao.UserDao;
+
+public class UserDaoImpl implements UserDao{
+	private SqlSessionTemplate sqlSessionTemplate;
+
+}

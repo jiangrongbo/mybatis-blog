@@ -1,0 +1,7 @@
+INDEX VERSION 1.127
+C:\Users\root\Desktop\mybatis_pro\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2799006944.index
+\exam3\src
+C:\Users\root\Desktop\mybatis_pro\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\105516894.index
+\exam3\src
+C:\Users\root\Desktop\mybatis_pro\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1924351983.index
+\exam3\src
